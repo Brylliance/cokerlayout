@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    background-color: #02223c;
+}
+.wrapper{
+    padding: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    
+}
+.wrapper2{
+    display: flex;
+    background-color: white;
+}
+nav{
+   width: 550px;
+}
+.copy{
+    width: 550px;
+}
+img{
+    vertical-align: bottom;
+}
+h1{
+    display: inline;
+}
+footer{
+    text-align: center;
+    font-family: helvetica, arial;
+    color: white;
+}
