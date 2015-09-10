@@ -4,7 +4,7 @@ body{
 }
 .wrapper{
     padding: 50px;
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
     position: relative;
 }
@@ -17,13 +17,14 @@ header{
 .wrapper2{
     display: flex;
     background-color: white;
+    max-width: 100%;
+    padding: 50px;
 }
 nav{
     width: 550px;
     width: 297px;
     height: 256px;
     background-color: #fff8e2;
-    margin-left: 60px;
     margin-top: 60px;
 }
 ul{
@@ -36,12 +37,12 @@ li{
     border-bottom-style: solid;
     border-bottom-color: #f4e4b0;
     border-bottom-width: 1px;
-    margin-left: 10px;
     margin-top: 20px;
     margin: 33px 0;
+    padding-right: 10px
 }
 .copy{
-    width: 700px;
+    width: 90%;
     margin-left: 50px;
 }
 p{
