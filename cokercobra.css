@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #02223c;
+    background-image: url("images/bgtile.png")
 }
 .wrapper{
     padding: 50px;
@@ -18,7 +18,7 @@ header{
     display: flex;
     background-color: white;
     max-width: 100%;
-    padding: 50px;
+    padding: 50px; 
 }
 nav{
     width: 550px;
@@ -29,24 +29,25 @@ nav{
 }
 ul{
 }
+li+li{
+    border-top-style: solid;
+    border-top-color: #f4e4b0;
+    border-top-width: 1px;
+}
 li{
     font-family: helvetica, arial;
     font-size: 13pt;
     color: #02223c;
     list-style-type: none;
-    border-bottom-style: solid;
-    border-bottom-color: #f4e4b0;
-    border-bottom-width: 1px;
-    margin-top: 20px;
     margin: 33px 0;
-    padding-right: 10px
 }
 .copy{
     width: 90%;
     margin-left: 50px;
 }
 p{
-    font-size: 15pt;
+    font-size: 13pt;
+    font-family: georgia;
 }
 img{
     vertical-align: bottom;
