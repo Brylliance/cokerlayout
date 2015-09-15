@@ -82,9 +82,9 @@ h1{
     font-size: 45pt;
     margin-left: 10px;
     margin-bottom: 25px;
-    -ms-transform: rotate(-5deg);    
-    -webkit-transform: rotate(-5deg); 
-    transform: rotate(-5deg);
+    -ms-transform: rotate(-3deg);    
+    -webkit-transform: rotate(-3deg); 
+    transform: rotate(-3deg);
 }
 h2{
     color: #00457c;
