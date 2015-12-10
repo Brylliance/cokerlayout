@@ -4,15 +4,18 @@ body{
 }
 .wrapper{
     padding: 50px;
-    width: 90%;
-    margin: 0 auto;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    min-width: 300px;
 }
 header{
     margin-bottom: 0px;
 }
 .wrapper2{
     display: flex;
+    align-items: flex-start;
     background-color: white;
     max-width: 100%;
     padding: 50px; 
@@ -28,12 +31,18 @@ header{
 }
 nav{
     width: 297px;
-    height: 256px;
     background-color: #fff8e2;
     border-radius: 10px;
     -webkit-box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.32);
     -moz-box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.32);
     box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.32);
+}
+.hamburger{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 100px;
+    display: none;
 }
 ul{
     margin-top: -10px;
@@ -60,17 +69,14 @@ a:hover {
     color: #ffc426;
 }
 .copy{
-    width: 90%;
     margin-left: 50px;
-    margin-top: -65px;
 }
 p{
-    font-size: 13pt;
+    font-size: 20px;
     font-family: georgia;
 }
 img{
     vertical-align: bottom;
-    margin-bottom: 20px;
     margin-bottom: -25px;
     margin-left: -25px;
     position: static;
@@ -88,15 +94,67 @@ h1{
 }
 h2{
     color: #00457c;
-    font-size: 18pt;
+    font-size: 25px;
     font-family: Georgia;
-    margin-top: 60px;
     margin-bottom: -15px;
-    margin-left: 0px;
+    margin-top: 0;
 }
 footer{
     text-align: center;
     font-family: helvetica, arial;
     color: #8badc8;
     margin-top: 30px;
+}
+.mainnav{
+    padding-bottom: 35px;
+}
+@media (max-width: 890px) {
+    .wrapper2{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding-top: 0;
+    }
+    h1{
+        font-size: 34px;
+        transform: none;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }   
+    .hamburger{
+        display: block;
+        margin-left: 120px;
+        height: .5em;
+        line-height: .5em;
+        margin-bottom: -20px;
+        margin-top: -10px;
+    }
+    img{
+        margin-left: 75px;
+        margin-right: auto;
+        margin-bottom: -15px;
+        margin-top: -40px;
+    }
+    .copy{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .mainnav{
+    }
+    nav{
+        padding-bottom: 0;
+    }
+    .mainnav>ul{
+        display: none;
+    }
+}
+.mainnav>.active{
+    display: block;
 }

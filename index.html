@@ -12,7 +12,8 @@
                 <h1>Awesome Website</h1>
             </header>
             <div class="wrapper2">
-                <nav>
+                <nav class="mainnav">
+                    <button class="hamburger" type="button">&equiv;</button>
                     <ul>
                         <li><a href="https://www.google.com/">Google</a></li>
                         <li><a href="https://www.yahoo.com/">Yahoo!</a></li>
@@ -31,5 +32,12 @@
             </div>
             <footer>Awesome Footer</footer>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">               </script>
+        <script>
+        $('.hamburger').click(function(){
+            $('.mainnav>ul').toggleClass('active');
+        });
+        
+        </script>
     </body>
 </html>
